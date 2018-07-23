@@ -12,4 +12,4 @@ This is a maven project and the apk file for this resides in /AutomationTest/src
 
 ## Result
 
-I have attached a cucumber report containing the results of all three scenario's. Please open any html file and it will launch the report form which you can navigate to its may sections. 
+I have attached a cucumber report containing the results of all three scenario's. Please open any html file and it will launch the report from which you can navigate to its may sections. 
