@@ -12,6 +12,13 @@ Please note, for scenario 1 : I have implemented 2 different methods to show alt
 
 This is a maven project and the apk file for this resides in /AutomationTest/src/test/resources/app-debug.apk.
 
+
+## Executing tests
+
+To execute the tests, please ensure maven is installed. Then run the below command which will generate cucumber reports:
+          mvn test verify
+          
+          
 ## Result
 
 I have attached a cucumber report containing the results of all three scenario's. Please open any html file and it will launch the report from which you can navigate to its may sections. 
