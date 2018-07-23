@@ -1,6 +1,6 @@
 # CheeseAppTest
 
-This Repo illutrates a test automation framework(POM) using Appium & Java for the below sceanrios. 
+This Repo illutrates a test automation framework(POM) using Appium & Java for the below scenario's. 
 
 Scenario1: Check if all the 3 categories of cheese are displayed. 
 Secanario2:  Check if all the 3 sections are displayed for the selected cheese 
