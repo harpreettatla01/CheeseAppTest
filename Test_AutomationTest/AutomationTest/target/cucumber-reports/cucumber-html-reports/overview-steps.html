@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.tablesorter.min.js"></script>
+<script type="text/javascript" src="js/Chart.min.js"></script>
+<script type="text/javascript" src="js/moment.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+  
+<title>Cucumber Reports (no 1) - Steps Overview</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+                <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation"     class="active" ><a href="overview-steps.html">Steps</a></li>
+                <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+    
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+              <th>Number</th>
+            <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>IAG Mobile Portal Automation</td>
+              <td>1</td>
+            <td>23 Jul 2018, 14:46</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+      </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Steps Statistics</h2>
+          <p>The following graph shows step statistics for this build. Below list is based on results.
+ step does not provide information about result then is not listed below.
+ Additionally @Before and @After are not counted because they are part of the scenarios, not steps.</p>
+      </div>
+</div>
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table id="tablesorter" class="stats-table table-hover">
+
+        <thead>
+          <tr class="header">
+            <th>Implementation</th>
+            <th>Occurrences</th>
+            <th>Average duration</th>
+            <th>Max duration</th>
+            <th>Total durations</th>
+            <th>Ratio</th>
+          </tr>
+        </thead>
+
+        <tbody>
+                      <tr>
+              <td class="location">CheeseDescriptionStepDef.validate_Friends_Section_is_displayed()</td>
+              <td>1</td>
+              <td class="duration" data-value="74960062">0.074</td>
+              <td class="duration" data-value="74960062">0.074</td>
+              <td class="duration" data-value="74960062">0.074</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">CheeseDescriptionStepDef.validate_Info_Section_is_displayed()</td>
+              <td>1</td>
+              <td class="duration" data-value="91984868">0.091</td>
+              <td class="duration" data-value="91984868">0.091</td>
+              <td class="duration" data-value="91984868">0.091</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">CheeseDescriptionStepDef.validate_Related_Section_is_displayed()</td>
+              <td>1</td>
+              <td class="duration" data-value="1404856485">1.404</td>
+              <td class="duration" data-value="1404856485">1.404</td>
+              <td class="duration" data-value="1404856485">1.404</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">HomePageStepDef.change_the_mode_to(String)</td>
+              <td>1</td>
+              <td class="duration" data-value="5190797459">5.190</td>
+              <td class="duration" data-value="5190797459">5.190</td>
+              <td class="duration" data-value="5190797459">5.190</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">HomePageStepDef.click_the_Ellipsis_on_top_right_of_the_app_and_select_night_mode()</td>
+              <td>1</td>
+              <td class="duration" data-value="1306406708">1.306</td>
+              <td class="duration" data-value="1306406708">1.306</td>
+              <td class="duration" data-value="1306406708">1.306</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">HomePageStepDef.i_have_launched_the_app_and_home_page_title_is_displayed()</td>
+              <td>4</td>
+              <td class="duration" data-value="613650598">0.613</td>
+              <td class="duration" data-value="613650598">0.673</td>
+              <td class="duration" data-value="2454602394">2.454</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">HomePageStepDef.select_a_cheese()</td>
+              <td>1</td>
+              <td class="duration" data-value="2721690714">2.721</td>
+              <td class="duration" data-value="2721690714">2.721</td>
+              <td class="duration" data-value="2721690714">2.721</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">HomePageStepDef.setup()</td>
+              <td>4</td>
+              <td class="duration" data-value="7049785201">7.049</td>
+              <td class="duration" data-value="7049785201">7.486</td>
+              <td class="duration" data-value="28199140805">28.199</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">HomePageStepDef.tearDown()</td>
+              <td>4</td>
+              <td class="duration" data-value="3013299722">3.013</td>
+              <td class="duration" data-value="3013299722">3.202</td>
+              <td class="duration" data-value="12053198889">12.053</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">HomePageStepDef.validate_all_the_three_categories_of_cheese_are_displayed()</td>
+              <td>1</td>
+              <td class="duration" data-value="605647813">0.605</td>
+              <td class="duration" data-value="605647813">0.605</td>
+              <td class="duration" data-value="605647813">0.605</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">HomePageStepDef.validate_all_the_three_categories_of_cheese_are_displayed(String,String,String)</td>
+              <td>1</td>
+              <td class="duration" data-value="803838751">0.803</td>
+              <td class="duration" data-value="803838751">0.803</td>
+              <td class="duration" data-value="803838751">0.803</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                  </tbody>
+
+        <tfoot class="total">
+          <tr>
+            <td>11</td>
+            <td>20</td>
+            <td class="duration">2.745</td>
+            <td class="duration">28.199</td>
+            <td class="duration">54.907</td>
+            <td>Totals</td>
+          </tr>
+        </tfoot>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>

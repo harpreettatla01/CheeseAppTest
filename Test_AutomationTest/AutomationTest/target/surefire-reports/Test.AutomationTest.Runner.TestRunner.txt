@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: Test.AutomationTest.Runner.TestRunner
+-------------------------------------------------------------------------------
+Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 55.435 s - in Test.AutomationTest.Runner.TestRunner
