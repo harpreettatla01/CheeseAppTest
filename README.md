@@ -3,7 +3,9 @@
 This Repo illutrates a test automation framework(POM) using Appium & Java for the below scenario's. 
 
 Scenario1: Check if all the 3 categories of cheese are displayed. 
+
 Secanario2:  Check if all the 3 sections are displayed for the selected cheese 
+
 Scenario 3: Change the mode to Night(Always)
 
 Please note, for scenario 1 : I have implemented 2 different methods to show alternative ways of accomplishing this (one by passing parameters via feature file and the other by specifying values within the HomePage file). 
